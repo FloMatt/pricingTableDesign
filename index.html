@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+
+    <title>Price Comparison</title>
+  </head>
+  <body class="md:mx-auto">
+    <div class="w-9/12 mx-auto items-center my-12">
+      <div class="grid w-9/12 place-items-center mx-auto mt-8 pt-8">
+        <h1 class="p-2 text-4xl">
+          <span class="text-gray-400"> CHOOSE YOUR</span>
+          <span class="font-bold">BEST PLAN</span>
+        </h1>
+        <h6 class="p-2 text-l">
+          First 30 days <span class="text-blue-500">absolutely free</span> for
+          any plans, no credit card required.
+        </h6>
+
+        <div class="flex m-4">
+          <h1 class="px-2 text-l">
+            BILLED <span class="text-green-400">MONTHLY</span>
+          </h1>
+          <div class="px-2">
+            <div class="toggle" onclick="toggle()">
+              <div class="circle"></div>
+            </div>
+          </div>
+
+          <h5 class="px-2 text-l">
+            BILLED <span class="text-blue-500">ANNUALLY(SAVE 90%)</span>
+          </h5>
+        </div>
+      </div>
+      <div class="flex grid grid-cols-3 mx-4">
+        <div class="relative w-30 shadow-2xl bg-white mx-auto p-2">
+          <div><img src="/images/basic.png" alt="" /></div>
+          <div class="grid w-30 place-items-center">
+            <h1 class="p-2"><span class="font-bold">BASIC </span>PLAN</h1>
+            <h6 class="p-2">5 Accounts</h6>
+            <h6 class="p-2">1 Project</h6>
+            <h5 class="p-2">5 GB Space</h5>
+            <h1 class="p-2">Email Support</h1>
+            <h1 class="text-3xl text-red-500">FREE</h1>
+            <h6 class="text-sm">
+              <span id="period" class="period">Per Month</span>
+            </h6>
+          </div>
+          <div class="absolute -bottom-4 mx-auto">
+            <button
+              class="text-l text-white bg-red-500 rounded-md px-6 py-1 mx-16"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+        <div class="relative w-30 shadow-2xl bg-white mx-auto p-2">
+          <div><img src="/images/standard.png" alt="" /></div>
+          <div class="grid w-30 place-items-center">
+            <h1 class="p-2"><span class="font-bold">STANDARD </span>PLAN</h1>
+            <h1 class="p-2">10 Accounts</h1>
+            <h1 class="p-2">5 Projects</h1>
+            <h6 class="p-2">100GB Space</h6>
+            <h6 class="p-2">Mon-Fri Support</h6>
+            <h1 class="text-3xl"><span class="text">€ 12.99</span></h1>
+            <h6 class="text-sm">
+              <span id="period" class="period">Per Month</span>
+            </h6>
+            <h6 class="p-2"></h6>
+          </div>
+          <div class="absolute -bottom-4 mx-auto">
+            <button
+              class="text-l text-white bg-blue-500 rounded-md mx-16 px-6 py-1"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+        <div class="relative w-30 shadow-2xl bg-white p-2 mx-auto">
+          <div><img src="/images/premium.png" alt="" /></div>
+          <div class="grid w-30 place-items-center">
+            <h1 class="p-2"><span class="font-bold">PREMIUM </span>PLAN</h1>
+            <h1 class="p-2">Unlimited Accounts</h1>
+            <h1 class="p-2">Unlimited Projects</h1>
+            <h6 class="p-2">100GB Space</h6>
+            <h6 class="p-2">24/7 Critical Support</h6>
+            <h1 class="text-3xl"><span class="text1">€ 39.99</span></h1>
+            <h6 class="text-sm">
+              <span id="period" class="period">Per Month</span>
+            </h6>
+            <h6 class="p-2"></h6>
+          </div>
+          <div class="absolute -bottom-4 mx-auto">
+            <button
+              class="text-l text-white bg-green-500 rounded-md mx-16 px-6 py-1"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/app.js"></script>
+</html>
